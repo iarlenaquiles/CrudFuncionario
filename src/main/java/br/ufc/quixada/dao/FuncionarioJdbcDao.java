@@ -175,4 +175,10 @@ public class FuncionarioJdbcDao implements FuncionarioDao {
 		return null;
 	}
 
+	@Override
+	public List<Funcionario> getListaOtimizada() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -8,6 +8,8 @@ public interface FuncionarioDao {
 	public void adiciona(Funcionario funcionario);
 
 	public List<Funcionario> getLista();
+	
+	public List<Funcionario> getListaOtimizada();
 
 	public List<Funcionario> getListaNamed();
 	

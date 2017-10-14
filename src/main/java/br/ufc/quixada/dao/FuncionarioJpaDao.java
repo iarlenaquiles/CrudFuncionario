@@ -109,4 +109,11 @@ public class FuncionarioJpaDao implements FuncionarioDao {
 		JPAUtil.closeEntityManager();
 	}
 
+	@Override
+	public List<Funcionario> getListaOtimizada() {
+		List<Funcionario> result = em.createQuery("select f from funcionarios f join fetch f.dependentes", Funcionario.class).getResultList();
+		JPAUtil.closeEntityManager();
+		return result;
+	}
+
 }
